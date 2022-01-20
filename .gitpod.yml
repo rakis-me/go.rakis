@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: deno upgrade
+  - command: export PS1=":) " && clear
+
+ports:
+  - port: 8000
+    visibility: public
+    onOpen: ignore
